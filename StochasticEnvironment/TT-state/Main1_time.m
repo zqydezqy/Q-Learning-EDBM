@@ -15,8 +15,8 @@ plot(S,V);axis([0,1400,0,18]);title('Original Solution')
 %=======奖励：进入终点状态奖励为0，其他为-1=======
 n_actions=length(sections)-3;%动作空间：所有可以分配能量的区段,不要在最后两个区段分能量
 StateSpace_Time;
-% QEnergy=zeros(n_states,n_actions);
-QEnergy=ones(n_states,n_actions)*500;
+QEnergy=zeros(n_states,n_actions);
+% QEnergy=ones(n_states,n_actions)*500;
 dE=0.5;%单位：千瓦时
 % dE=0.1;%单位：千瓦时
 N_Episodes=200000;

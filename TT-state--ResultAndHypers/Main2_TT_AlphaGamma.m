@@ -24,8 +24,8 @@ dt=0.1;
 T=torg:-dt:topt1;
 n_states=length(T);
 
-% QEnergy=zeros(n_states,n_actions);
-QEnergy=ones(n_states,n_actions)*500;
+QEnergy=zeros(n_states,n_actions);
+% QEnergy=ones(n_states,n_actions)*500;
 % load('时间状态下的最优Q表0.5度.mat');
 dE=0.5;%单位：千瓦时
 %dE=0.1;%单位：千瓦时
